@@ -1,5 +1,13 @@
 package com.back;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+
+@Service
+@RequiredArgsConstructor
 public class PersonService {
 
     private int version = 1;
@@ -12,4 +20,5 @@ public class PersonService {
         System.out.println("v%d 버전의 count() 호출".formatted(version));
         return 3;
     }
+
 }
